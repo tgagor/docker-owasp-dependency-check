@@ -23,7 +23,7 @@ RUN apt update && \
 # build cache of NVD/CVE updates
 RUN dependency-check --updateonly
 
-VOLUME [ "/code", "/report" ]
+VOLUME ["/code", "/report"]
 
-ENTRYPOINT [ "/usr/local/bin/dependency-check" ]
+ENTRYPOINT ["/usr/local/bin/dependency-check"]
 CMD ["--format", "HTML", "--project", "dummy", "--scan", "/code", "--out", "/report"]
