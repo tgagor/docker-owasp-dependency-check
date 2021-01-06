@@ -32,4 +32,3 @@ TODO
 ----
 
 * run it as unprivileged allowing to change UID/GID
-* add environment variable allowing to update DB before the check (it's slow so whouldn't be enabled by default)
