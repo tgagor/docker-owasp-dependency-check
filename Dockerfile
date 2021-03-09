@@ -4,7 +4,7 @@ MAINTAINER TiMoR, https://github.com/tgagor
 # don't store temp files
 VOLUME ["/tmp", "/var/tmp", "/var/lib/apt"]
 
-ARG DEPENDENCY_CHECK_VERSION=6.1.1
+ARG DEPENDENCY_CHECK_VERSION=6.1.2
 RUN apt update && \
     apt install -y --no-install-recommends curl gnupg unzip && \
     curl -fsSLo /tmp/dependency-check.zip https://github.com/jeremylong/DependencyCheck/releases/download/v${DEPENDENCY_CHECK_VERSION}/dependency-check-${DEPENDENCY_CHECK_VERSION}-release.zip && \
